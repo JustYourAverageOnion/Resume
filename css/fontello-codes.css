@@ -1,0 +1,9 @@
+
+.icon-instagram:before { content: '\f1'; } /* 'ñ' */
+.icon-github:before { content: '\f2'; } /* 'ò' */
+.icon-mail:before { content: '\f3'; } /* 'ó' */
+.icon-twitter:before { content: '\f4'; } /* 'ô' */
+.icon-youtube:before { content: '\f5'; } /* 'õ' */
+.icon-arrow:before { content: '\f6'; } /* 'ö' */
+.icon-codepen:before { content: '\f7'; } /* '÷' */
+.icon-code:before { content: '\f8'; } /* 'ø' */
