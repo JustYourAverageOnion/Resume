@@ -29,16 +29,20 @@ body {
     display: none;
 }
 
-::selection, .invert {
-    color: var(--bg-color);
-    // opacity: 0.5;
+::selection,
+.invert {
+    color: var(--bg-color); // opacity: 0.5;
     background: var(--primary-color);
 }
-
 
 * {
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
 }
 
 .clear {
@@ -814,12 +818,12 @@ a.btn:hover,
     }
 }
 
-a.anchor {
+a.anchor,
+a.anchor2 {
     display: block;
     position: relative;
-    top: -120px;
-    // visibility: hidden;
-    border: solid 1px;
+    top: -130px;
+    visibility: hidden;
 }
 
 @font-face {
@@ -846,4 +850,91 @@ a.anchor {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     color: var(--primary-color);
+}
+
+@media (orientation:portrait) {
+  .hideOnSmallScreen {
+     display: none; /* visibility: none; */
+     visibility: hidden;
+     opacity: 0;
+
+  }
+}
+@media (orientation:landscape) and (max-width: 500px) {
+  .hideOnSmallScreen {
+     display: none; /* visibility: none; */
+     visibility: hidden;
+     opacity: 0;
+  }
+}
+/*Light Switch*/
+
+label {
+    transition: color 0.3s ease 0s;
+    -moz-transition: color 0.3s ease 0s;
+    -webkit-transition: color 0.3s ease 0s;
+    -o-transition: color 0.3s ease 0s;
+    font-size: var(--font-size-med);
+    display: block;
+    margin-top: 12px;
+    width: 2em;
+    text-align: center;
+}
+
+label:hover {
+    background: var(--primary-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+input#lightswitch {
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    z-index: 999; // border-bottom: 1px dotted var(--font-color);
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    top: 150%;
+    left: 50%;
+    margin-left: -60px;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: transparent transparent var(--primary-color) transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+.tooltiptext:before {
+    content: 'Night';
+}
+
+input#lightswitch:checked + .tooltiptext:before {
+  content: " Off";
 }

@@ -17,10 +17,17 @@
                 <div class="top-menu">
                     <ul>
                         <li>
-                            <a href="#section-resume" class="lnk">Resume</a>
+                            <label for="lightswitch" class="tooltip">🌙<span class="tooltiptext">🌞 Mode</span></label>
+                            <input type="checkbox" id="lightswitch" checked/>
+                        </li>
+                        <li class="hideOnSmallScreen">
+                            <a href="#section-home" class="lnk">Home</a>
                         </li>
                         <li>
-                            <a href="#section-works" class="lnk">Portfolio</a>
+                            <a href="#section-about" class="lnk">About</a>
+                        </li>
+                        <li>
+                            <a href="#section-works" class="lnk">Works</a>
                         </li>
                     </ul>
                 </div>
@@ -28,12 +35,12 @@
         </header>
         <div class="wrapper">
             <!-- Started -->
-            <div class="section started">
+            <div class="section started" id="section-home">
                 <div class="centrize full-width">
                     <div class="vertical-center">
                         <div class="started-content">
                             <div class="h-title">I'm
-                                <span>Average Onion</span>
+                                <span class="invert">Average Onion</span>
                             </div>
                             <div class="h-subtitle">
                                 <p>A problem Solver and a quick thinker</p>
@@ -43,16 +50,17 @@
                 </div>
             </div>
             <!-- About -->
-            <a class="anchor" id="top"></a>
+            <a class="anchor" id="section-about"></a>
             <div class="section about">
                 <div class="content">
                     <div class="title">
-                        <div class="title_inner"><a class="anchor" name="section-resume"></a>About Me</div>
+                        <div class="title_inner">
+                            <a class="anchor" name="section-resume"></a>About Me</div>
                     </div>
                     <div class="image">
                         <img src="./logoT.png" alt="" /> </div>
                     <div class="desc">
-                        <p> Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an, cule dicta iriure at. Ubique maluisset vel te, his dico vituperata ut. Pro ei phaedrum maluisset. Ex audire suavitate has, ei quodsi tacimates sapientem sed, pri zril ubique ut. Te cule tation munere noluisse. Enim torquatos ne pri, eum mollis salutandi corrumpit et, fugit apeirian duo ad. </p>
+                        <p>I am a highly competent IT professional with a proven track record in designing websites, CSS Art and small scale indie game designing. I have strong technical skills as well as excellent interpersonal skills, enabling me to interact with a wide range of clients. I am eager to be challenged in order to grow and further improve my IT skills. My greatest passion is in life is using my technical know-how to benefit other people and organisations.</p>
                         <div class="info-list">
                             <ul>
                                 <li>
@@ -98,7 +106,7 @@
                                 <div class="resume-item ">
                                     <div class="date">Dec 2016 - Jan 2017</div>
                                     <div class="name">Web Designer &amp; Developer at Vebzippmatic Labs</div>
-                                    <p>Interned as a web developer for a startup company that designs websites for other startups. I am given a task and the requirements and a deadline. Interned for this company made me familiarize myself with the CSS3 and basic JS needed for front end development.</p>
+                                    <p>Interned as a web developer for a startup company that designs websites for other startups. I am given a task and the requirements and a deadline. Interning for this company made me familiarize myself with the CSS3 and basic JS needed for front end development.</p>
                                 </div>
                                 <div class="resume-item ">
                                     <div class="date">Nov 2016 - Dec 2016</div>
@@ -142,7 +150,9 @@
                     </div>
                 </div>
             </div>
+            
             <div class="section skills">
+                <a class="anchor" id="top"></a>
                 <div class="content">
                     <div class="cols">
                         <div class="col col-sm">
@@ -151,11 +161,46 @@
                             </div>
                             <div class="skills">
                                 <ul>
-                                    <li><div class="name">Web Dev</div><div class="progress"><div class="percentage" style="width:80%;"><span class="percent">80%</span></div></div></li>
-                                    <li><div class="name">ML</div><div class="progress"><div class="percentage" style="width:40%;"><span class="percent">40%</span></div></div></li>
-                                    <li><div class="name">AI</div><div class="progress"><div class="percentage" style="width:65%;"><span class="percent">65%</span></div></div></li>
-                                    <li><div class="name">Game Dev</div><div class="progress"><div class="percentage" style="width:55%;"><span class="percent">55%</span></div></div></li>
-                                    <li><div class="name">OCR</div><div class="progress"><div class="percentage" style="width:60%;"><span class="percent">60%</span></div></div></li>
+                                    <li>
+                                        <div class="name">Web Dev</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:80%;">
+                                                <span class="percent">80%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">ML</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:40%;">
+                                                <span class="percent">40%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">AI</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:65%;">
+                                                <span class="percent">65%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Game Dev</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:55%;">
+                                                <span class="percent">55%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">OCR</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:60%;">
+                                                <span class="percent">60%</span>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -165,9 +210,30 @@
                             </div>
                             <div class="skills">
                                 <ul>
-                                    <li><div class="name">Bank</div><div class="progress"><div class="percentage" style="width:85%;"><span class="percent">85%</span></div></div></li>
-                                    <li><div class="name">Law</div><div class="progress"><div class="percentage" style="width:55%;"><span class="percent">55%</span></div></div></li>
-                                    <li><div class="name">Education</div><div class="progress"><div class="percentage" style="width:65%;"><span class="percent">65%</span></div></div></li>
+                                    <li>
+                                        <div class="name">Bank</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:85%;">
+                                                <span class="percent">85%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Law</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:55%;">
+                                                <span class="percent">55%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Education</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:65%;">
+                                                <span class="percent">65%</span>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
@@ -177,69 +243,93 @@
                             </div>
                             <div class="skills">
                                 <ul>
-                                    <li><div class="name">Javascript</div><div class="progress"><div class="percentage" style="width:85%;"><span class="percent">85%</span></div></div></li>
-                                    <li><div class="name">Python</div><div class="progress"><div class="percentage" style="width:75%;"><span class="percent">75%</span></div></div></li>
+                                    <li>
+                                        <div class="name">Javascript</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:85%;">
+                                                <span class="percent">85%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Python</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:75%;">
+                                                <span class="percent">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        
                         <div class="col col-sm">
                             <div class="title">
                                 <div class="title_inner">Framework</div>
                             </div>
                             <div class="skills">
                                 <ul>
-                                    <li><div class="name">Angular</div><div class="progress"><div class="percentage" style="width:85%;"><span class="percent">85%</span></div></div></li>
-                                    <li><div class="name">Ionic</div><div class="progress"><div class="percentage" style="width:75%;"><span class="percent">75%</span></div></div></li>
-                                    <li><div class="name">React</div><div class="progress"><div class="percentage" style="width:75%;"><span class="percent">75%</span></div></div></li>
-                                    <li><div class="name">Django</div><div class="progress"><div class="percentage" style="width:75%;"><span class="percent">75%</span></div></div></li>
-                                    <li><div class="name">Node</div><div class="progress"><div class="percentage" style="width:75%;"><span class="percent">75%</span></div></div></li>
-                                    <li><div class="name">Flask</div><div class="progress"><div class="percentage" style="width:75%;"><span class="percent">75%</span></div></div></li>
+                                    <li>
+                                        <div class="name">Angular</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:85%;">
+                                                <span class="percent">85%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Ionic</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:75%;">
+                                                <span class="percent">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">React</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:75%;">
+                                                <span class="percent">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Django</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:75%;">
+                                                <span class="percent">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Node</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:75%;">
+                                                <span class="percent">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="name">Flask</div>
+                                        <div class="progress">
+                                            <div class="percentage" style="width:75%;">
+                                                <span class="percent">75%</span>
+                                            </div>
+                                        </div>
+                                    </li>
                                 </ul>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
+            <a class="anchor2" id="section-works"></a>
             <div class="section skills">
                 <div class="content">
                     <div class="title">
-                        <div class="title_inner">Framework</div>
+                        <div class="title_inner">Works</div>
                     </div>
                     <div class="skills list">
-                        <ul>
-                            <li>
-                                <div class="name">Django</div>
-                            </li>
-                            <li>
-                                <div class="name">React / Redux</div>
-                            </li>
-                            <li>
-                                <div class="name">Angular</div>
-                            </li>
-                            <li>
-                                <div class="name">Vue</div>
-                            </li>
-                            <li>
-                                <div class="name">Flutter</div>
-                            </li>
-                            <li>
-                                <div class="name">Ionic</div>
-                            </li>
-                            <li>
-                                <div class="name">Flask</div>
-                            </li>
-                            <li>
-                                <div class="name">ExpressJs</div>
-                            </li>
-                            <li>
-                                <div class="name">Bootstrap</div>
-                            </li>
-                            <li>
-                                <div class="name">NodeJS</div>
-                            </li>
-                        </ul>
+                        
                     </div>
                 </div>
             </div>
@@ -247,12 +337,22 @@
         <!-- Footer -->
         <footer>
             <div class="soc">
-                <a target="_blank" href="https://www.instagram.com/justyouraverageonion/"><i class="icon icon-instagram">&#xf1;</i></a>
-                <a target="_blank" href="https://github.com/JustYourAverageOnion"><i class="icon icon-github">&#xf2;</i></a>
+                <a target="_blank" href="https://www.instagram.com/justyouraverageonion/">
+                    <i class="icon icon-instagram">&#xf1;</i>
+                </a>
+                <a target="_blank" href="https://github.com/JustYourAverageOnion">
+                    <i class="icon icon-github">&#xf2;</i>
+                </a>
                 <!-- <a target="_blank" href="https://www.mail.com/"><i class="icon icon-mail">&#xf3;</i></a> -->
-                <a target="_blank" href="https://twitter.com/JustYorAvgOnion"><i class="icon icon-twitter">&#xf4;</i></a>
-                <a target="_blank" href="https://www.youtube.com/channel/UC0gLgSwqFsbVka-xu2PuHcA"><i class="icon icon-youtube">&#xf5;</i></a>
-                <a target="_blank" href="https://codepen.io/justyouraverageonion"><i class="icon icon-codepen">&#xf7;</i></a>
+                <a target="_blank" href="https://twitter.com/JustYorAvgOnion">
+                    <i class="icon icon-twitter">&#xf4;</i>
+                </a>
+                <a target="_blank" href="https://www.youtube.com/channel/UC0gLgSwqFsbVka-xu2PuHcA">
+                    <i class="icon icon-youtube">&#xf5;</i>
+                </a>
+                <a target="_blank" href="https://codepen.io/justyouraverageonion">
+                    <i class="icon icon-codepen">&#xf7;</i>
+                </a>
             </div>
             <div class="copy">Hey, How you doing?</div>
             <div class="clr"></div>
